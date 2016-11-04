@@ -9,6 +9,7 @@
 body
 {
     padding-top: 50px;
+    background-color:#f5f7f9;
 }
 
 /*
@@ -63,19 +64,37 @@ body
 #accordion
 {
     list-style: none;
-    float: none;
+    padding: 0 0 0 0;
+    width: 170px;
 }
 
-#accordion div
+#accordion li:hover
+{
+    background-color: #fcfcfc;
+}
+#accordion li {
+	font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Trebuchet MS1, Helvetica, sans-serif;
+    text-align: left;
+    color:#3a4049;
+    
+	
+}
+
+#accordion div:
 {
     display: block;
-    background-color: #FF9927;
-    font-weight: bold;
+    background-color: #ffffff;
+    margin: 1px;
+    cursor: pointer;
 }
 
 #accordion ul
 {
     list-style: none;
+    padding: 0 0 0 0;
 }
 
 #accordion ul
@@ -88,17 +107,25 @@ body
     font-weight: normal;
     cursor: auto;
     background-color: #ffffff;
+    padding: 0 0 0 7px;
 }
 
 #accordion a
 {
     text-decoration: none;
+    
+}
+
+#accordian div:hover
+{
+    color: #ffffff;
 }
 
 #accordion a:hover
 {
     text-decoration: underline;
 }
+
 
 /* Hide for mobile, show later */
 
@@ -120,7 +147,7 @@ body
         padding: 20px;
         overflow-x: hidden;
         overflow-y: auto;
-        background-color: #f5f5f5;
+        background-color: #ffffff;
         border-right: 1px solid #eee;
     }
 }
@@ -145,7 +172,7 @@ body
 .nav-sidebar > .active > a:focus
 {
     color: #fff;
-    background-color: #428bca;
+    background-color: #F0EAD6;
 }
 
 /*
