@@ -96,24 +96,47 @@
                 </div>
             </div>
             <!-- PUT ALL NEW CONTENT HERE -->
-            <div class="col-sm-9">
-                <div class="container">
-                    <div class="center-block loginBox ">
-                        <h1 class="loginTitle">Log-In</h1>
-                        <select class="menuDropdown">
-                            <option>Choose Practice</option>
-                            <option>Developers</option>
-                            <option>Sheppard Village Dental</option>
-                            <option>Test Company</option>
-                        </select>
-                        <select class="menuDropdown">
-                            <option>Choose User</option>
-                            <option>gdmurray</option>
-                            <option>sbrach</option>
-                            <option>ksanwal</option>
-                        </select>
-                        <input type="password" placeholder="Password" class="entryBox">
-                        <input type="submit" class="loginButton">
+            <div class="col-sm-9 col-sm-push-3 col-md-push-2">
+                <div class="col-sm-6 contentBox">
+                    <h3>Staff Info</h3>
+                    <hr>
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th class="active">
+									ID #</th>
+                                <th class="active">
+									Team Member</th>
+                                <th class="active">
+									Department</th>
+                                <th class="active">
+									Active</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="active">4</td>
+                                <td width="30%" class="success">Greg Murray</td>
+                                <td class="success">Admin Department</td>
+                                <td width="10%" class="success">True</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-6 col-md-6 contentBox">
+                    <h3>Company Info</h3>
+                    <hr>
+                    <div class="row">
+                        <table class="table table-bordered">
+                            {% for key,value in y.items() %}
+                            <tbody>
+                                <tr>
+                                    <td class="active">{{ key }}</td>
+                                    <td class="active">{{ value }}</td>
+                                </tr>
+                            </tbody>
+                            {% endfor %}
+                        </table>
                     </div>
                 </div>
             </div>
