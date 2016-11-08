@@ -48,8 +48,8 @@
             </div>             
         </nav>         
         <div class="container-fluid"> 
-            <div class="col-lg-2 col-md-2 sidebar"> 
-                <div class="row"> 
+            <div class="col-sm-3 col-md-2 sidebar"> 
+                <div class="row">
                     <ul id="accordion"> 
                         <li> 
                             <div>Data Entry</div>                             
@@ -92,86 +92,66 @@
                         <li> 
                             <div>Staff Info</div>                             
                         </li>                         
-                    </ul>                     
-                </div>                 
-            </div>
-            <div class="col-lg-10 col-md-10 col-lg-push-2 col-md-push-2"> 
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-lg-push-1 col-md-push-2 dashboardPadding">
-                        <div class="container-fluid dashboardBorder bucketColour1">
-                            <div class="col-lg-5 text-center">
-                                <p class="percentLabel">76%</p>
-                            </div>
-                            <div class="col-lg-7">
-                                <span class="dashboardTopLabel">Hygiene</span>
-                                <br>
-                                <span class="dashboardBottomLabel">Department</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-lg-push-1 col-md-push-2 dashboardPadding">
-                        <div class="container-fluid dashboardBorder bucketColour2">
-                            <div class="col-lg-5 text-center">
-                                <p class="percentLabel">76%</p>
-                            </div>
-                            <div class="col-lg-7">
-                                <span class="dashboardTopLabel">Hygiene</span>
-                                <br>
-                                <span class="dashboardBottomLabel">Department</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-lg-push-1 col-md-push-2 dashboardPadding">
-                        <div class="container-fluid dashboardBorder bucketColour3">
-                            <div class="col-lg-5 text-center">
-                                <p class="percentLabel">76%</p>
-                            </div>
-                            <div class="col-lg-7">
-                                <span class="dashboardTopLabel">Hygiene</span>
-                                <br>
-                                <span class="dashboardBottomLabel">Department</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-lg-push-1 col-md-push-2 dashboardPadding">
-                        <div class="container-fluid dashboardBorder bucketColour4">
-                            <div class="col-lg-5 text-center">
-                                <p class="percentLabel">76%</p>
-                            </div>
-                            <div class="col-lg-7">
-                                <span class="dashboardTopLabel">Hygiene</span>
-                                <br>
-                                <span class="dashboardBottomLabel">Department</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-lg-push-1 col-md-push-2 dashboardPadding">
-                        <div class="container-fluid dashboardBorder bucketColour5">
-                            <div class="col-lg-5 text-center">
-                                <p class="percentLabel">76%</p>
-                            </div>
-                            <div class="col-lg-7">
-                                <span class="dashboardTopLabel">Hygiene</span>
-                                <br>
-                                <span class="dashboardBottomLabel">Department</span>
-                            </div>
-                        </div>
-                    </div>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-lg-10 col-lg-push-1 dashboardTableBox">
-</div>
-                    <table class="dataTable">
+            </div>
+            <!-- PUT ALL NEW CONTENT HERE -->
+            <div class="col-sm-9 col-md-11 col-sm-push-3 col-md-push-2">
+                <div class="col-sm-6 StaffInfoBox">
+                    <h3>Staff Info</h3>
+                    <hr>
+                    <table class="infoTable">
                         <thead>
                             <tr>
-                                <th>Greg Murray</th>
-                                <th>Octobeer 25th - 3ewr</th>
+                                <th>
+									ID #</th>
+                                <th>
+									Team Member</th>
+                                <th>
+									Department</th>
+                                <th>
+									Active</th>
                             </tr>
                         </thead>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td width="30%">Greg Murray</td>
+                                <td>Admin Department</td>
+                                <td width="10%">True</td>
+                            </tr>
+                            <tr>
+                                <td class="active">4</td>
+                                <td width="30%" class="success">Shaan Brach</td>
+                                <td class="success">Admin Department</td>
+                                <td width="10%" class="success">True</td>
+                            </tr>
+                            <tr>
+                                <td class="active">4</td>
+                                <td width="30%" class="success">Greg Murray</td>
+                                <td class="success">Admin Department</td>
+                                <td width="10%" class="success">True</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
-            </div>             
-            <!-- PUT ALL NEW CONTENT HERE -->             
+                <div class="col-sm-3 col-md-2 StaffInfoBox">
+                    <h3>Company Info</h3>
+                    <hr>
+                    <table class="infoTable">
+                        <tbody>
+                            <tr>
+                                <td class="active">Company Name</td>
+                                <td class="active">Developers</td>
+                            </tr>
+                            <tr>
+                                <td class="active">Address</td>
+                                <td class="active">333 King St North</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>         
         <!-- Bootstrap core JavaScript
     ================================================== -->         

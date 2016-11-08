@@ -9,7 +9,7 @@
 body
 {
     padding-top: 50px;
-    background-color: #f1f4f7;
+    background-color: #f5f7f9;
 }
 
 /*
@@ -135,22 +135,6 @@ body
     margin-top: 20px;
     width: 300px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.46);
-}
-
-.dashboardTableBox
-{
-    border-radius: 5px;
-    padding: 40px 15px;
-    text-align: center;
-    background-color: #ffffff;
-    margin-top: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.46);
-}
-
-.dashboardPadding
-{
-    padding: 10px;
-    margin-top: 20px;
 }
 
 .StaffInfoBox
@@ -459,9 +443,7 @@ body
     font-size: 11px;
     text-align: left;
 }
-
-.inBarText
-{
+.inBarText{
     margin-top: -2px;
     margin-left: -10px;
     position: absolute;
@@ -470,120 +452,3 @@ body
     color: black;
 }
 
-.percentLabel
-{
-    font-size: 24px;
-    color: #ffffff;
-    margin-left: -20px;
-    padding-top: 10px;
-}
-
-.dashboardBorder
-{
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.46);
-    background-color: #ffffff;
-    padding-top: 5px;
-}
-
-.bucketColour1{
-	background: linear-gradient(to right, #30a5ff 0%,#30a5ff 40%,#ffffff 33%,white 50%,white 100%);
-}
-.bucketColour2{
-	background: linear-gradient(to right, #ffb53e 0%,#ffb53e 40%,#ffffff 33%,white 50%,white 100%);
-}
-.bucketColour3{
-	background: linear-gradient(to right, #1ebfae 0%,#1ebfae 40%,#ffffff 33%,white 50%,white 100%);
-}
-.bucketColour4{
-	background: linear-gradient(to right, #f9243f 0%,#f9243f 40%,#ffffff 33%,white 50%,white 100%);
-}
-.bucketColour5{
-	background: linear-gradient(to right, #6A4C93 0%,#6A4C93 40%,#ffffff 33%,white 50%,white 100%);
-}
-
-.dashboardTopLabel
-{
-    font-size: 16px;
-    font-weight: 600;
-    text-align: left;
-    float: left;
-    padding-top: 5px;
-}
-
-.dashboardBottomLabel
-{
-    font-size: 12px;
-    font-weight: normal;
-    color: #9fadbb;
-    margin-left: -;
-}
-
-.dashboardGlyphPlus
-{
-    font-size: 20px;
-    margin-top: 3px;
-    font-weight: normal;
-}
-
-
-
-
-.dataTable
-{
-    background: white;
-    border-radius: 3px;
-    border-left: 1px solid #9ea7af;
-    border-collapse: collapse;
-    margin: auto;
-    max-width: 600px;
-    padding: 5px;
-    width: 100%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.dataTable th
-{
-    color: #ffffff;
-    background: #343942;
-    border-bottom: 2px solid #9ea7af;
-    border-right: 1px solid #343a45;
-    font-size: 14px;
-    padding: 10px;
-    font-weight: 100;
-    text-align: center;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    vertical-align: middle;
-}
-
-.dataTable tr
-{
-    border-top: 1px solid #C1C3D1;
-    border-bottom: 1px solid #C1C3D1;
-    color: #666B85;
-    font-size: 16px;
-    font-weight: normal;
-    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
-}
-
-.dataTable td
-{
-    background: #ffffff;
-    padding: 8px;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: 300;
-    font-size: 14px;
-    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-    border-right: 1px solid #C1C3D1;
-}
-
-.dataTable tr:nth-child(odd) td
-{
-    background: #EBEBEB;
-}
-
-.dataTable tr:last-child
-{
-    border-bottom: 1px solid #9ea7af;
-}
