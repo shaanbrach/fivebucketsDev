@@ -487,20 +487,29 @@ body
     padding-top: 5px;
 }
 
-.bucketColour1{
-	background: linear-gradient(to right, #30a5ff 0%,#30a5ff 40%,#ffffff 33%,white 50%,white 100%);
+.bucketColour1
+{
+    background: linear-gradient(to right, #30a5ff 0%,#30a5ff 40%,#ffffff 33%,white 50%,white 100%);
 }
-.bucketColour2{
-	background: linear-gradient(to right, #ffb53e 0%,#ffb53e 40%,#ffffff 33%,white 50%,white 100%);
+
+.bucketColour2
+{
+    background: linear-gradient(to right, #ffb53e 0%,#ffb53e 40%,#ffffff 33%,white 50%,white 100%);
 }
-.bucketColour3{
-	background: linear-gradient(to right, #1ebfae 0%,#1ebfae 40%,#ffffff 33%,white 50%,white 100%);
+
+.bucketColour3
+{
+    background: linear-gradient(to right, #1ebfae 0%,#1ebfae 40%,#ffffff 33%,white 50%,white 100%);
 }
-.bucketColour4{
-	background: linear-gradient(to right, #f9243f 0%,#f9243f 40%,#ffffff 33%,white 50%,white 100%);
+
+.bucketColour4
+{
+    background: linear-gradient(to right, #f9243f 0%,#f9243f 40%,#ffffff 33%,white 50%,white 100%);
 }
-.bucketColour5{
-	background: linear-gradient(to right, #6A4C93 0%,#6A4C93 40%,#ffffff 33%,white 50%,white 100%);
+
+.bucketColour5
+{
+    background: linear-gradient(to right, #6A4C93 0%,#6A4C93 40%,#ffffff 33%,white 50%,white 100%);
 }
 
 .dashboardTopLabel
@@ -526,9 +535,6 @@ body
     margin-top: 3px;
     font-weight: normal;
 }
-
-
-
 
 .dataTable
 {
@@ -573,9 +579,7 @@ body
     padding: 8px;
     text-align: center;
     vertical-align: middle;
-    
     font-size: 14px;
-    
     border-right: 1px solid #D3D6E9;
 }
 
@@ -599,3 +603,4 @@ body
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.46);
     margin-left: 10px;
 }
+
