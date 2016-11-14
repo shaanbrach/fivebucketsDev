@@ -96,94 +96,94 @@
                 </div>                 
             </div>             
             <div class="col-lg-10 col-md-10 col-lg-push-2 col-md-push-2 managerBorderBox"> 
-                <div class="row"> 
-                    <ul class="nav nav-tabs"> 
-                        <li class="active col-lg-3"> 
-                            <a href="#">Users</a> 
-                        </li>                         
-                        <li class="col-lg-3"> 
-                            <a href="#">Records</a> 
-                        </li>                         
-                        <li class="col-lg-3"> 
-                            <a href="#">Settings</a> 
-                        </li>                         
-                        <li class="col-lg-3"> 
-                            <a href="#">Payment History</a> 
-                        </li>                         
-                    </ul>                     
-                </div>                 
-                <div class="row" style="padding: 15px;"> 
-                    <table class="infoTable"> 
-                        <thead> 
-                            <tr> 
-                                <th>ID</th> 
-                                <th>Name</th> 
-                                <th>Username</th> 
-                                <th>Department</th> 
-                                <th>Created</th> 
-                                <th>Manager</th> 
-                                <th>Is Active</th> 
-                                <th>Activate/<br>Deactivate</th> 
-                                <th><span class="glyphicon glyphicon-pencil"></span></th> 
-                                <th><span class="glyphicon glyphicon-trash"></span></th> 
-                            </tr>                             
-                        </thead>                         
-                        <tbody> 
-                            <tr> 
-                                <td>5</td> 
-                                <td>Greg Murray</td> 
-                                <td>gdmurray</td> 
-                                <td>Admin Team</td> 
-                                <td>Whenever it was created</td> 
-                                <td>True</td> 
-                                <td>True</td> 
-                                <td><span class="glyphicon glyphicon-off"></span></td> 
-                                <td><span class="glyphicon glyphicon-pencil"></span></td> 
-                                <td><span class="glyphicon glyphicon-trash"></span></td> 
-                            </tr>                             
-                            <tr> 
-                                <td>3</td> 
-                                <td>Shaan Brach</td> 
-                                <td>sbrach</td> 
-                                <td>Admin Team</td> 
-                                <td>Whenever it was created</td> 
-                                <td>True</td> 
-                                <td>True</td> 
-                                <td><span class="glyphicon glyphicon-off"></span></td> 
-                                <td><span class="glyphicon glyphicon-pencil"></span></td> 
-                                <td><span class="glyphicon glyphicon-trash"></span></td> 
-                            </tr>                             
-                            <tr> 
-                                <td>New</td> 
-                                <form action="{{ url_for('auth.signup') }}" method="post"> 
-                                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" /> 
-                                    <td> 
-                                        <input type="text" placeholder="Name" name="name"> 
-                                    </td>                                     
-                                    <td> 
-                                        <input type="text" placeholder="Username" name="username"> 
-                                    </td>                                     
-                                    <input type="hidden" name="password" value="password" /> 
-                                    <td> 
-                                        <select name="department"> 
-                                            <option value="0">Doctors Team</option>                                             
-                                            <option value="1">Hygiene Team</option>                                             
-                                            <option value="2">Admin Team</option>                                             
-                                            <option value="3">Office Team</option>                                             
-                                        </select>                                         
-                                    </td>                                     
-                                    <input type="hidden" name="user_company" value="{{ request.url.split('/')[-1] }}"> 
-                                    <td>Password "password" by Default</td> 
-                                    <td>Default False<br>Change After Creation</td> 
-                                    <td></td> 
-                                    <td colspan="3" class="text-center"> 
-                                        <button class="btn btn-sm btn-success" type="submit" value="signup">Create</button>                                         
-                                    </td>                                     
-                                </form>                                 
-                            </tr>                             
-                        </tbody>                         
-                    </table>                     
-                </div>                 
+                <div class="row">
+                    <ul class="nav nav-tabs">
+                        <li class="active col-lg-3">
+                            <a href="#">Users</a>
+                        </li>
+                        <li class="col-lg-3">
+                            <a href="#">Records</a>
+                        </li>
+                        <li class="col-lg-3">
+                            <a href="#">Settings</a>
+                        </li>
+                        <li class="col-lg-3">
+                            <a href="#">Payment History</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row" style="padding: 15px;">
+                    <table class="infoTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Username</th>
+                                <th>Department</th>
+                                <th>Created</th>
+                                <th>Manager</th>
+                                <th>Is Active</th>
+                                <th>Activate/<br>Deactivate</th>
+                                <th><span class="glyphicon glyphicon-pencil"></span></th>
+                                <th><span class="glyphicon glyphicon-trash"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5</td>
+                                <td>Greg Murray</td>
+                                <td>gdmurray</td>
+                                <td>Admin Team</td>
+                                <td>Whenever it was created</td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td><span class="glyphicon glyphicon-off"></span></td>
+                                <td><span class="glyphicon glyphicon-pencil"></span></td>
+                                <td><span class="glyphicon glyphicon-trash"></span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Shaan Brach</td>
+                                <td>sbrach</td>
+                                <td>Admin Team</td>
+                                <td>Whenever it was created</td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td><span class="glyphicon glyphicon-off"></span></td>
+                                <td><span class="glyphicon glyphicon-pencil"></span></td>
+                                <td><span class="glyphicon glyphicon-trash"></span></td>
+                            </tr>
+                            <tr>
+                                <td>New</td>
+                                <form action="{{ url_for('auth.signup') }}" method="post">
+                                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                                    <td>
+                                        <input type="text" placeholder="Name" name="name">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Username" name="username">
+                                    </td>
+                                    <input type="hidden" name="password" value="password" />
+                                    <td>
+                                        <select name="department">
+                                            <option value="0">Doctors Team</option>
+                                            <option value="1">Hygiene Team</option>
+                                            <option value="2">Admin Team</option>
+                                            <option value="3">Office Team</option>
+                                        </select>
+                                    </td>
+                                    <input type="hidden" name="user_company" value="{{ request.url.split('/')[-1] }}">
+                                    <td>Password "password" by Default</td>
+                                    <td>Default False<br>Change After Creation</td>
+                                    <td></td>
+                                    <td colspan="3" class="text-center">
+                                        <button class="btn btn-sm btn-success" type="submit" value="signup">Create</button>
+                                    </td>
+                                </form>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>             
             <!-- PUT ALL NEW CONTENT HERE -->             
         </div>         

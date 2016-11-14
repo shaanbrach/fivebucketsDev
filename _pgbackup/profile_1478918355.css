@@ -1,0 +1,137 @@
+
+
+.user_row
+{
+    height: 320px;
+}
+
+.calendar_title
+{
+    font-size: 26px;
+}
+
+#calendar
+{
+    width: 100%;
+}
+
+#calendar a
+{
+    color: #8e352e;
+    text-decoration: none;
+}
+
+#calendar ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#calendar li
+{
+    display: block;
+    float: left;
+    width: 14.342%;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar ul.weekdays
+{
+    height: 40px;
+    background: #35A591;
+}
+
+#calendar ul.weekdays li
+{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+}
+
+#calendar .other-month
+{
+    background: #333;
+    color: #333;
+}
+
+#calendar .days li
+{
+    height: 120px;
+    background: #ffffff;
+}
+
+#calendar .days li:hover
+{
+    background: #d3d3d3;
+}
+
+#calendar .date
+{
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #7F0E0E;
+    width: 21px;
+    border-radius: 50%;
+    float: right;
+}
+
+#calendar .event
+{
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 0 2px;
+    margin-bottom: 5px;
+    line-height: 12px;
+    background: #e4f2f2;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+#calendar .event-desc
+{
+    color: #666;
+    margin: 3px 0 7px 0;
+    text-decoration: none;
+}
+
+.month_title
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgba(239, 61, 52, 0.68);
+    font-weight: lighter;
+}
+
+.profile_img
+{
+    width: 80px;
+    height: 80px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    line-height: 80px;
+    box-shadow: 0 0 5px white;
+    margin-top: 9px;
+    font-style: normal;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E6DBFF;
+}
+

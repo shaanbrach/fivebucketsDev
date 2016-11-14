@@ -8,7 +8,7 @@
         <meta name="author" content=""> 
         <title>Dashboard Template for Bootstrap</title>         
         <!-- Bootstrap core CSS -->         
-        <link href="/bootstrap/css/bootstrap.css" rel="stylesheet"> 
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
         <!-- Custom styles for this template -->         
         <link href="style.css" rel="stylesheet"> 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->         
@@ -95,97 +95,63 @@
                     </ul>                     
                 </div>                 
             </div>             
-            <div class="col-lg-10 col-md-10 col-lg-push-2 col-md-push-2 managerBorderBox"> 
-                <div class="row"> 
-                    <ul class="nav nav-tabs"> 
-                        <li class="active col-lg-3"> 
-                            <a href="#">Users</a> 
-                        </li>                         
-                        <li class="col-lg-3"> 
-                            <a href="#">Records</a> 
-                        </li>                         
-                        <li class="col-lg-3"> 
-                            <a href="#">Settings</a> 
-                        </li>                         
-                        <li class="col-lg-3"> 
-                            <a href="#">Payment History</a> 
-                        </li>                         
-                    </ul>                     
-                </div>                 
-                <div class="row" style="padding: 15px;"> 
+            <!-- PUT ALL NEW CONTENT HERE -->             
+            <div class="col-lg-10 col-md-10 col-lg-push-2 col-md-push-2"> 
+                <div class="col-sm-6 StaffInfoBox"> 
+                    <h3>Staff Info</h3> 
+                    <hr> 
                     <table class="infoTable"> 
                         <thead> 
                             <tr> 
-                                <th>ID</th> 
-                                <th>Name</th> 
-                                <th>Username</th> 
-                                <th>Department</th> 
-                                <th>Created</th> 
-                                <th>Manager</th> 
-                                <th>Is Active</th> 
-                                <th>Activate/<br>Deactivate</th> 
-                                <th><span class="glyphicon glyphicon-pencil"></span></th> 
-                                <th><span class="glyphicon glyphicon-trash"></span></th> 
+                                <th> 
+									ID #</th> 
+                                <th> 
+									Team Member</th> 
+                                <th> 
+									Department</th> 
+                                <th> 
+									Active</th> 
                             </tr>                             
                         </thead>                         
                         <tbody> 
                             <tr> 
-                                <td>5</td> 
-                                <td>Greg Murray</td> 
-                                <td>gdmurray</td> 
-                                <td>Admin Team</td> 
-                                <td>Whenever it was created</td> 
-                                <td>True</td> 
-                                <td>True</td> 
-                                <td><span class="glyphicon glyphicon-off"></span></td> 
-                                <td><span class="glyphicon glyphicon-pencil"></span></td> 
-                                <td><span class="glyphicon glyphicon-trash"></span></td> 
+                                <td>4</td> 
+                                <td width="30%">Greg Murray</td> 
+                                <td>Admin Department</td> 
+                                <td width="10%">True</td> 
                             </tr>                             
                             <tr> 
-                                <td>3</td> 
-                                <td>Shaan Brach</td> 
-                                <td>sbrach</td> 
-                                <td>Admin Team</td> 
-                                <td>Whenever it was created</td> 
-                                <td>True</td> 
-                                <td>True</td> 
-                                <td><span class="glyphicon glyphicon-off"></span></td> 
-                                <td><span class="glyphicon glyphicon-pencil"></span></td> 
-                                <td><span class="glyphicon glyphicon-trash"></span></td> 
+                                <td class="active">4</td> 
+                                <td width="30%" class="success">Shaan Brach</td> 
+                                <td class="success">Admin Department</td> 
+                                <td width="10%" class="success">True</td> 
                             </tr>                             
                             <tr> 
-                                <td>New</td> 
-                                <form action="{{ url_for('auth.signup') }}" method="post"> 
-                                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" /> 
-                                    <td> 
-                                        <input type="text" placeholder="Name" name="name"> 
-                                    </td>                                     
-                                    <td> 
-                                        <input type="text" placeholder="Username" name="username"> 
-                                    </td>                                     
-                                    <input type="hidden" name="password" value="password" /> 
-                                    <td> 
-                                        <select name="department"> 
-                                            <option value="0">Doctors Team</option>                                             
-                                            <option value="1">Hygiene Team</option>                                             
-                                            <option value="2">Admin Team</option>                                             
-                                            <option value="3">Office Team</option>                                             
-                                        </select>                                         
-                                    </td>                                     
-                                    <input type="hidden" name="user_company" value="{{ request.url.split('/')[-1] }}"> 
-                                    <td>Password "password" by Default</td> 
-                                    <td>Default False<br>Change After Creation</td> 
-                                    <td></td> 
-                                    <td colspan="3" class="text-center"> 
-                                        <button class="btn btn-sm btn-success" type="submit" value="signup">Create</button>                                         
-                                    </td>                                     
-                                </form>                                 
+                                <td class="active">4</td> 
+                                <td width="30%" class="success">Greg Murray</td> 
+                                <td class="success">Admin Department</td> 
+                                <td width="10%" class="success">True</td> 
+                            </tr>                             
+                        </tbody>                         
+                    </table>                     
+                </div>                 
+                <div class="col-sm-3 col-md-2 StaffInfoBox"> 
+                    <h3>Company Info</h3> 
+                    <hr> 
+                    <table class="infoTable"> 
+                        <tbody> 
+                            <tr> 
+                                <td class="active">Company Name</td> 
+                                <td class="active">Developers</td> 
+                            </tr>                             
+                            <tr> 
+                                <td class="active">Address</td> 
+                                <td class="active">333 King St North</td> 
                             </tr>                             
                         </tbody>                         
                     </table>                     
                 </div>                 
             </div>             
-            <!-- PUT ALL NEW CONTENT HERE -->             
         </div>         
         <!-- Bootstrap core JavaScript
     ================================================== -->         
